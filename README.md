@@ -1,5 +1,7 @@
 # CV Builder
 
+Live Preview: 👉 https://Amr-Abdelazim.github.io/cv-builder/
+
 CV Builder is a modern, responsive web application built with React and Vite that helps you create a professional resume quickly and easily. The app features a step-by-step form for entering your contact information, education, skills, experience, and references. You can preview your CV in real time and export it as a beautifully styled PDF using your browser's print dialog.
 
 ## Features
