@@ -1,0 +1,45 @@
+.timeline-container {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 50px 10px;
+}
+
+.timeline-container button {
+  background: none;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.timeline-container button input {
+  display: inline;
+}
+.timeline-container span {
+  font-family: "Bitcount Prop Double", system-ui;
+  font-weight: 500;
+}
+
+.timeline-container button:hover {
+  background-color: rgba(27, 6, 121, 0.1);
+}
+.timeline-container button:active {
+  opacity: 0.8;
+}
+
+.timeline-container button.selected {
+  border-bottom: 2px solid rgba(205, 241, 0, 0.5);
+}
+.timeline-container button.selected:hover {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+.timeline-container button.finished {
+  border-bottom: 2px solid rgba(35, 204, 1, 0.5);
+}
+.timeline-container button.finished:hover {
+  border-bottom: 2px solid rgba(27, 153, 2, 0.2);
+}
+
+/*rgba(222, 222, 222, 0.5);
+rgba(6, 167, 0, 0.5);
+}*/

@@ -1,0 +1,190 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap");
+
+.resume-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 48px 36px;
+  background: linear-gradient(135deg, #f8fbff 0%, #e3f2fd 100%);
+  border-radius: 22px;
+  box-shadow: 0 8px 40px rgba(44, 62, 80, 0.13);
+  font-family: "Montserrat", "Roboto", Arial, sans-serif;
+  color: #222;
+  position: relative;
+  overflow: hidden;
+}
+
+.resume-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 12px;
+  background: linear-gradient(180deg, #1976d2 0%, #00bcd4 100%);
+  border-radius: 12px;
+  z-index: 0;
+}
+
+.resume-container > * {
+  position: relative;
+  z-index: 1;
+}
+
+.resume-container h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+  color: #1976d2;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.resume-container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.2em;
+  color: #00bcd4;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+}
+
+.resume-container .contact-info {
+  margin-bottom: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5em;
+  font-size: 1.08rem;
+  background: #e3f2fd;
+  border-radius: 8px;
+  padding: 12px 18px;
+  box-shadow: 0 1px 6px rgba(25, 118, 210, 0.04);
+}
+
+.resume-container .contact-info p {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  font-weight: 500;
+}
+
+.resume-container h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 2.2em;
+  margin-bottom: 0.7em;
+  color: #1976d2;
+  border-bottom: 2px solid #90caf9;
+  padding-bottom: 0.2em;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.resume-container h4 {
+  font-size: 1.12rem;
+  font-weight: 600;
+  margin-bottom: 0.2em;
+  color: #283593;
+  font-family: "Montserrat", sans-serif;
+}
+
+.resume-container .section-card {
+  margin-bottom: 1.5em;
+  padding: 18px 26px;
+  background: linear-gradient(90deg, #f7faff 0%, #e3f2fd 100%);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.09);
+  border-left: 5px solid #00bcd4;
+  font-family: "Roboto", sans-serif;
+}
+
+.resume-container ul {
+  padding-left: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.resume-container li {
+  margin-bottom: 0.3em;
+  list-style-type: disc;
+  font-size: 1.05rem;
+  color: #1976d2;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.resume-container a {
+  color: #00bcd4;
+  text-decoration: underline;
+  word-break: break-all;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.resume-container .section-card p {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.02rem;
+  margin-bottom: 0.5em;
+}
+
+.resume-pdf {
+  width: 794px !important; /* A4 width in px at 96dpi */
+  min-height: 1123px !important; /* A4 height in px at 96dpi */
+  padding: 32px !important;
+  box-sizing: border-box;
+  background: #fff !important;
+  color: #222 !important;
+  font-size: 1rem !important;
+  overflow: visible !important;
+}
+
+@media (max-width: 900px) {
+  .resume-container {
+    max-width: 98vw;
+    padding: 18px 6px;
+  }
+  .resume-container::before {
+    top: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .resume-container {
+    padding: 8px 2px;
+    font-size: 0.95rem;
+  }
+  .resume-container h1 {
+    font-size: 1.5rem;
+  }
+  .resume-container h2 {
+    font-size: 1.1rem;
+  }
+  .resume-container h3 {
+    font-size: 1rem;
+  }
+  .resume-container h4 {
+    font-size: 0.98rem;
+  }
+  .resume-container .section-card {
+    padding: 10px 8px;
+  }
+  .resume-container .contact-info {
+    gap: 1em;
+    padding: 8px 6px;
+  }
+}
+
+@media print {
+  button {
+    display: none !important;
+  }
+  body,
+  .resume-container {
+    background: #fff !important;
+    box-shadow: none !important;
+    color: #222 !important;
+  }
+}

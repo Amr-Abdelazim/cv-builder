@@ -1,0 +1,42 @@
+.CVform {
+  display: flex;
+  width: 100%;
+  height: 100vb;
+  position: fixed;
+}
+
+.controller-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  background-color: #f0f0f0;
+  min-width: 400px;
+}
+.form-container {
+  width: 60%;
+  height: 100%;
+  background-color: #ffffff;
+  min-width: 750px;
+}
+#create-cv-btn {
+  width: 200px;
+  height: 70px;
+  border: none;
+  background-color: rgb(216, 216, 216);
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: "Bitcount Prop Double", system-ui;
+  font-weight: 500;
+  font-size: 1.6rem;
+  min-width: 300px;
+}
+#create-cv-btn:hover {
+  color: rgb(216, 216, 216);
+  background-color: black;
+}
+#create-cv-btn:active {
+  opacity: 0.8;
+}

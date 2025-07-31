@@ -1,0 +1,110 @@
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px;
+}
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.input-container input {
+  all: unset;
+  background-color: #f0f0f0;
+  text-align: center;
+  height: 40px;
+  width: 340px;
+  border-radius: 20px 0px 0px 20px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: "Intel One Mono", monospace;
+  font-size: 1rem;
+}
+.input-container input:hover {
+  border: 1px solid black;
+  height: 38px;
+  width: 338px;
+}
+.input-container input:focus {
+  border: 1px solid black;
+  height: 38px;
+  width: 338px;
+}
+.input-container input:active {
+  opacity: 0.7;
+}
+.input-container button {
+  all: unset;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  cursor: pointer;
+  height: 40px;
+  width: 120px;
+  border-radius: 0px 20px 20px 0px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: "Intel One Mono", monospace;
+  font-size: 1rem;
+}
+.input-container button:hover {
+  background-color: #c5c5c5;
+  color: black;
+}
+.input-container button:active {
+  background-color: #c5c5c5;
+  color: black;
+  font-size: 0.9rem;
+}
+.view-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.skillList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: scroll;
+  align-items: start;
+}
+/* Scrollbar width */
+.skillList::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.skillList::-webkit-scrollbar-track {
+  background: #5d6e6a;
+  border-radius: 10px;
+}
+
+/* Thumb (the draggable part) */
+.skillList::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+/* Thumb on hover */
+.skillList::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.skill {
+  min-width: 100px;
+  max-width: 200px;
+  word-wrap: break-word;
+  font-family: "Intel One Mono", monospace;
+  font-size: 1.2rem;
+  background-color: #f0f0f0;
+  border-radius: 40px;
+
+  text-align: center;
+  padding: 5px;
+  padding-left: 20px;
+}
